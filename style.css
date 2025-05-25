@@ -1,0 +1,112 @@
+﻿/* General resets & fonts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #3b0a0f; /* Dark burgundy */
+  color: #f3e5e7; /* Soft light pinkish */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.container {
+  background: #5c1a22; /* Slightly lighter burgundy */
+  border-radius: 15px;
+  padding: 30px 40px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 0 20px #9b3e4a88;
+  text-align: center;
+  position: relative;
+}
+
+
+/* Header */
+header h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #f6cacf; /* Light rosy pink */
+}
+
+
+header p {
+  font-weight: 400;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #e1aeb4;
+  font-style: italic;
+}
+
+
+/* Navigation buttons */
+nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+
+nav button {
+  background-color: #7e2734; /* medium burgundy */
+  border: none;
+  color: #f3e5e7;
+  font-weight: 600;
+  padding: 12px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 18px; /* mix of round and soft square */
+  box-shadow: 0 2px 5px #591c25aa;
+}
+
+
+nav button:hover {
+  background-color: #a33844;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px #aa5c65cc;
+}
+
+
+/* Footer with rose image */
+footer {
+  margin-top: 30px;
+}
+
+
+.rose-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 15px #b65b65cc;
+}
+
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .container {
+    max-width: 90vw;
+    padding: 20px;
+  }
+
+
+  nav {
+    flex-direction: column;
+  }
+
+
+  nav button {
+    margin-bottom: 12px;
+    border-radius: 22px;
+  }
+}
